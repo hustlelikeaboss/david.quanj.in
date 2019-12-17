@@ -4,6 +4,9 @@ import { Link } from 'gatsby';
 import SEO from '../components/seo';
 import WithBg from '../components/WithBg';
 
+import artist from '../images/artist.svg';
+import geek from '../images/geek.svg';
+import hiker from '../images/hiker.svg';
 import '../styles/main.scss';
 
 const IndexPage = () => (
@@ -12,25 +15,13 @@ const IndexPage = () => (
     <main>
       <div className="flex-container--persona">
         <Link to="/">
-          <img
-            src="https://via.placeholder.com/250/38d39f?text=DESIGNER"
-            alt="designer"
-            className="persona--1"
-          />
+          <img src={artist} alt="designer" className="persona--1" />
         </Link>
         <Link to="/">
-          <img
-            src="https://via.placeholder.com/250/92c952?text=DEVELOPER"
-            alt="developer"
-            className="persona--2"
-          />
+          <img src={geek} alt="developer" className="persona--2" />
         </Link>
         <Link to="/">
-          <img
-            src="https://via.placeholder.com/250/6c63ff?text=PHOTOGRAPHER"
-            alt="photographer"
-            className="persona--3"
-          />
+          <img src={hiker} alt="photographer" className="persona--3" />
         </Link>
       </div>
     </main>

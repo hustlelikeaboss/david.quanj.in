@@ -51,7 +51,7 @@ body {
 
   img {
     @extend .shadow;
-    transition: box-shadow .5s;
+    transition: box-shadow 0.5s;
 
     &:hover {
       @extend .shadow-3xl;
