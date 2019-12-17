@@ -1,0 +1,18 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+  <g>
+   <title>background</title>
+   <rect fill="none" id="canvas_background" height="502" width="802" y="-1" x="-1"/>
+   <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+    <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+   </g>
+  </g>
+  <g>
+   <title>Layer 1</title>
+   <g id="svg_5">
+    <text transform="rotate(-40.9425, 256.383, 173.046) matrix(1.6711, 0, 0, 1.67205, -9.44546, -2.03362)" xml:space="preserve" text-anchor="start" font-family="'Shadows Into Light', serif" font-size="200" id="svg_1" y="154.709814" x="86.857473" stroke-width="0" stroke="#000" fill="#ffffff">D</text>
+    <text transform="rotate(-5.19528, 392.394, 313.467) matrix(1.59753, 0, 0, 1.57596, 185.77, -249.545)" xml:space="preserve" text-anchor="start" font-family="'Shadows Into Light', serif" font-size="200" id="svg_2" y="407.250102" x="57.123036" stroke-width="0" stroke="#000" fill="#ffffff">Q</text>
+    <text transform="rotate(46.253, 554.08, 373.506) matrix(1.87997, 0, 0, 1.87997, -394.069, -98.6289)" xml:space="preserve" text-anchor="start" font-family="'Shadows Into Light', serif" font-size="200" id="svg_3" y="301.139728" x="465.426156" stroke-width="0" stroke="#000" fill="#ffffff">J</text>
+   </g>
+  </g>
+ </svg>
