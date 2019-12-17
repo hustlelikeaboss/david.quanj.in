@@ -1,21 +1,36 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import SEO from '../components/seo';
+import '../styles/main.scss';
 
 const IndexPage = () => (
-  <Layout>
+  <div>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="flex-container--persona">
+      <Link to="/">
+        <img
+          src="https://via.placeholder.com/250/38d39f?text=DESIGNER"
+          alt="designer"
+          className="persona--1"
+        />
+      </Link>
+      <Link to="/">
+        <img
+          src="https://via.placeholder.com/250/92c952?text=DEVELOPER"
+          alt="developer"
+          className="persona--2"
+        />
+      </Link>
+      <Link to="/">
+        <img
+          src="https://via.placeholder.com/250/6c63ff?text=PHOTOGRAPHER"
+          alt="photographer"
+          className="persona--3"
+        />
+      </Link>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+  </div>
+);
 
-export default IndexPage
+export default IndexPage;
