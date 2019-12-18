@@ -11,6 +11,7 @@ const WithBg = ({ children }) => {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'contain',
         backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
       }}
     >
       {children}
