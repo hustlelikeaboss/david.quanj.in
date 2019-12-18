@@ -13,6 +13,10 @@ $xl: 1200px;
 // misc
 $page-width: 960px;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .content {
   margin: 0 auto;
   max-width: $page-width;
@@ -31,20 +35,58 @@ body {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: center;
-}
-
-.flex-container--justified {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-content: center;
 
-  & > * {
-    @media only screen and (max-width: $md) {
-      flex: 1 400px;
-      text-align: center;
+  &--persona {
+    @extend .flex-container;
+    @media only screen and (min-width: $md) {
+      height: 100vh;
+    }
+
+    & > * {
+      flex: 1 250px;
+      margin: 0 10px;
+    }
+
+    img {
+      @extend .shadow;
+      transition: box-shadow 0.5s;
+
+      &:hover {
+        @extend .shadow-3xl;
+      }
+    }
+  }
+
+  &--profile {
+    @extend .flex-container;
+    align-items: stretch;
+
+    & > * {
+      background-color: white;
+      height: 500px;
+    }
+
+    .left {
+      flex: 2 250px;
+    }
+
+    .right {
+      flex: 3 500px 500px;
+      padding: 2rem;
+      align-self: flex-start;
+    }
+  }
+
+  &--justified {
+    @extend .flex-container;
+    justify-content: space-between;
+
+    & > * {
+      @media only screen and (max-width: $md) {
+        flex: 1 400px;
+        text-align: center;
+      }
     }
   }
 }
@@ -71,29 +113,7 @@ body {
   box-shadow: none;
 }
 
-.flex-container--persona {
-  @extend .flex-container;
-
-  @media only screen and (min-width: $md) {
-    height: 100vh;
-  }
-
-  & > * {
-    flex: 1 250px;
-    margin: 0 10px;
-  }
-
-  img {
-    @extend .shadow;
-    transition: box-shadow 0.5s;
-
-    &:hover {
-      @extend .shadow-3xl;
-    }
-  }
-}
-
-.persona {
+.border-radius {
   &--1 {
     border-radius: 15px 50px;
   }
@@ -105,6 +125,25 @@ body {
   &--3 {
     border-radius: 50px 15px;
   }
+}
+
+.persona {
+  &--1 {
+    @extend .border-radius--1;
+  }
+
+  &--2 {
+    @extend .border-radius--2;
+  }
+
+  &--3 {
+    @extend .border-radius--3;
+  }
+}
+
+section {
+  height: 100vh;
+  padding: 2rem;
 }
 
 footer {
@@ -119,5 +158,20 @@ footer {
     width: 25px;
     opacity: 0.5;
     padding: 3px;
+  }
+}
+
+.card {
+  @extend .shadow;
+
+  .card-footer {
+    padding: 0 2rem;
+
+    a {
+      text-transform: uppercase;
+      float: right;
+      font-family: 'Merriweather Sans';
+      transition: text-decoration 0.5s;
+    }
   }
 }
