@@ -3,6 +3,8 @@
 // colors
 $light: #f2f2f2;
 $dark: #5a5a5a;
+$majestic: #8076a3;
+$blue: #6bd5e1;
 
 // screen sizes
 $sm: 600px;
@@ -29,7 +31,7 @@ main {
 }
 
 body {
-  background-color: rgba($light, 0.75);
+  background-color: rgba($light, 0.5);
 }
 
 .flex-container {
@@ -54,7 +56,7 @@ body {
     }
 
     img {
-      @extend .shadow;
+      @extend .shadow-lg;
       transition: box-shadow 0.5s;
 
       &:hover {
@@ -189,5 +191,59 @@ footer {
       font-family: 'Merriweather Sans';
       transition: text-decoration 0.5s;
     }
+  }
+}
+
+#navbar {
+  @extend .shadow;
+  margin: 0 auto;
+  padding: 0 10rem;
+  height: 80px;
+
+  position: fixed; // sticky
+  width: 100%;
+  transition: top 1s; // dynamic on scroll
+  transition: background-color 1s; // dynamic on scroll
+
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+
+  & > * {
+    flex: 1;
+    align-self: center;
+  }
+
+  #logo {
+    padding-top: 35px;
+    height: 95px;
+  }
+
+  #menu--1 {
+    text-align: center;
+    padding-top: 35px;
+    margin: 0 10rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+
+    & > * {
+      flex: 1;
+      align-self: center;
+    }
+
+    .menu--1-item {
+      height: 50px;
+
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+
+  #menu--2 {
+    text-align: right;
   }
 }

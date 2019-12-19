@@ -7,10 +7,12 @@ import Personas from '../sections/Personas';
 import Profile from '../sections/Profile';
 
 import '../styles/main.scss';
+import Navbar from '../sections/Navbar';
 
 const IndexPage = () => (
   <WithBg>
     <SEO title="Home" />
+    <Navbar />
     <main>
       <Personas />
       <Profile />
