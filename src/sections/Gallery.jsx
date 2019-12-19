@@ -35,7 +35,7 @@ export const Gallery = () => {
 
   return (
     <section id="gallery">
-      <div className="lightbox" style={{ display: show ? 'block' : 'none' }}>
+      <div className={`lightbox ${show ? 'visible' : 'hidden'}`}>
         <span className="lightbox-close" onClick={() => closeLightbox()}>
           &times;
         </span>
