@@ -3,6 +3,9 @@
 // colors
 $light: #f2f2f2;
 $dark: #5a5a5a;
+$pink: rgb(253, 131, 105);
+$turquoise: rgb(86, 202, 225);
+$gold: rgb(255, 217, 142);
 
 // screen sizes
 $sm: 600px;
@@ -30,6 +33,10 @@ main {
 
 body {
   background-color: rgba($light, 0.75);
+}
+
+h2 {
+  color: $pink;
 }
 
 .flex-container {
