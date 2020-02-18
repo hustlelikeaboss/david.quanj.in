@@ -23,6 +23,7 @@ const IndexPage = () => (
           href="https://www.hustlelikeaboss.design/"
           className="no-underline"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={artist} alt="designer" className="persona--1" />
         </a>
@@ -36,6 +37,7 @@ const IndexPage = () => (
           href="https://www.choicejadephotography.com/"
           className="no-underline"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={hiker} alt="photographer" className="persona--3" />
         </a>
