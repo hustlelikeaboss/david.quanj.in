@@ -33,7 +33,7 @@ const IndexPage = () => (
           <img src={hiker} alt="photographer" className="persona--3" />
         </Link> */}
         <a
-          href="/https://www.choicejadephotography.com/"
+          href="https://www.choicejadephotography.com/"
           className="no-underline"
           target="_blank"
         >
