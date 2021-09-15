@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Thinking Out Loud`,
-    description: `Personal Blog`,
-    author: `David Q. JIn <david.q.jin@gmail.com>`,
+    title: `David Q. Jin: Photographer + Designer + Software Developer`,
+    description: `David Q. Jin is a photographer, designer, and software developer. As a photographer, he takes pictures of nature and couples in love. As a web/graphic designer, he creates branding materials and websites for creative professionals, helping them turn ideas into businesses. As a T-shaped, user-centered, detail-oriented full-stack software developer, he writes clean, well-tested code; is always learning and experimenting; enjoys working with a variety of languages, frameworks, and cloud technologies in agile teams; has a passion for developing applications that exceed business expectations, delight end users, and make a lasting impact; and takes great pleasure in mentoring and helping people grow.`,
+    author: `David Q. Jin <david.q.jin@gmail.com>`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
