@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="flex-container--justified">
       <p>
-        &copy; 2019-{new Date().getFullYear()}, Brewed with ❤️ and a pinch of sarcasm
+        &copy; 2019-{new Date().getFullYear()}, Brewed with ❤️  and a pinch of sarcasm
       </p>
       <p>
         <a
